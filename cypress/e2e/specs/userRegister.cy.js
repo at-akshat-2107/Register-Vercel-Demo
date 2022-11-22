@@ -4,7 +4,7 @@ const userForm = new UserFormPage();
 
 describe("User Form Test Cases", () => {
   it("Go to WebPage", () => {
-    cy.visit("http://localhost:3000");
+    cy.visit("https://register-vercel-demo.vercel.app/");
   });
   describe("First Name Field Test Cases", () => {
     it("First Name->Empty Field Not Allowed", () => {
