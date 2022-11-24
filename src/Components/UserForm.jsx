@@ -106,7 +106,7 @@ const UserForm = () => {
   return (
     <div className="contanier my-3 mx-5 bg-light">
       <h1>
-        <b className="display-4 text-center" id="headerName" data-cy="headerTest">Cypress Register Form Demo App One</b>
+        <b className="display-4 text-center" id="headerName" data-cy="headerTest">Register Form App</b>
       </h1>
 
       <Formik
