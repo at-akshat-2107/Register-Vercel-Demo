@@ -106,7 +106,7 @@ const UserForm = () => {
   return (
     <div className="contanier my-3 mx-5 bg-light">
       <h1>
-        <b className="display-4 text-center" id="headerName" data-cy="headerTest">Cypress Register Form Demo App</b>
+        <b className="display-4 text-center" id="headerName" data-cy="headerTest">Cypress Register Form Demo App One</b>
       </h1>
 
       <Formik
@@ -116,7 +116,7 @@ const UserForm = () => {
       >
         <Form className="border border-5 p-3 bg-white">
           <div class="row border border-3 mx-5 my-2 bg-light">
-            <div className="col-md-6 ">
+            <div className="col-md-6 " id="first-name-parent">
               <label
                 htmlFor="firstname"
                 className="form-label h4 my-3 text-dark"
@@ -134,7 +134,7 @@ const UserForm = () => {
               />
               <ErrMsg name="firstName" className="form-text" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" id="last-name-parent">
               <label
                 htmlFor="lastname"
                 className="form-label h4 my-3 text-dark "
@@ -154,7 +154,7 @@ const UserForm = () => {
             </div>
           </div>
           <div class="row border border-3 mx-5 my-2 bg-light">
-            <div className="col-md-6">
+            <div className="col-md-6" id="gender-parent">
               <label htmlFor="gender" className="form-label h4 my-3 text-dark" data-cy="genderLabelTest">
                 Gender
               </label>
@@ -204,7 +204,7 @@ const UserForm = () => {
               </div>
               <ErrMsg name="gender" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" id="country-parent">
               <label htmlFor="country" className="form-label h4 my-3 text-dark" data-cy="countryLabelTest">
                 Country
               </label>
@@ -242,7 +242,7 @@ const UserForm = () => {
             </div>
           </div>
           <div class="row border border-3 mx-5 my-2 bg-light">
-            <div className="col-md-6 bg-light">
+            <div className="col-md-6 bg-light" id="mobile-number-parent">
               <label
                 htmlFor="mobilenumber"
                 className="form-label h4 my-3 text-dark"
@@ -260,7 +260,7 @@ const UserForm = () => {
               />
               <ErrMsg name="mobileNumber" className="form-text" />
             </div>
-            <div className="col-md-6 bg-light">
+            <div className="col-md-6 bg-light" id="email-parent">
               <label htmlFor="email" className="form-label h4 my-3 text-dark" data-cy="emailLabelTest">
                 Email
               </label>
@@ -276,7 +276,7 @@ const UserForm = () => {
             </div>
           </div>
           <div class="row border border-3 mx-5 my-2 bg-light">
-            <div className="col-md-6  ">
+            <div className="col-md-6" id="password-parent">
               <label
                 htmlFor="password"
                 className="form-label h4 my-3 text-dark"
@@ -294,7 +294,7 @@ const UserForm = () => {
               />
               <ErrMsg name="password" className="form-text" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" id="confirmPass-parent">
               <label
                 htmlFor="confirmpassword"
                 className="form-label h4 my-3 text-dark"
@@ -314,7 +314,7 @@ const UserForm = () => {
             </div>
           </div>
 
-          <div className="d-grid gap-2 m-3">
+          <div className="d-grid gap-2 m-3" id="register-btn-parent">
             <button type="submit" id="formregisterbutton" className="btn btn-success text-white fs-5" data-cy="registerButton">
               Register
             </button>
