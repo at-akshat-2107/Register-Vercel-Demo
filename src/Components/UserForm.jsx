@@ -121,6 +121,7 @@ const UserForm = () => {
                 htmlFor="firstname"
                 className="form-label h4 my-3 text-dark"
                 data-test-id="first-Name-Label-Test"
+                id="first-name-label"
               >
                 First Name
               </label>
@@ -139,6 +140,7 @@ const UserForm = () => {
                 htmlFor="lastname"
                 className="form-label h4 my-3 text-dark "
                 data-test-id="last-Name-Label-Test"
+                id="last-name-label-id"
               >
                 Last Name
               </label>
@@ -155,11 +157,11 @@ const UserForm = () => {
           </div>
           <div class="row border border-3 mx-5 my-2 bg-light">
             <div className="col-md-6" id="gender-parent">
-              <label htmlFor="gender" className="form-label h4 my-3 text-dark" data-test-id="gender-Label-Test">
+              <label htmlFor="gender" className="form-label h4 my-3 text-dark" data-test-id="gender-Label-Test"  id="gender-label-id">
                 Gender
               </label>
               <div className="row form-control mx-1">
-                <span className="col-md-3 form-check form-check-inline" data-test-id="gender_radio_parent">
+                <span className="col-md-3 form-check form-check-inline" data-test-id="gender_radio_parent" id="gender-radio-id">
                   <label htmlFor="gender" className="form-check-label" id="Male">
                     Male
                   </label>
@@ -205,7 +207,7 @@ const UserForm = () => {
               <ErrMsg name="gender" />
             </div>
             <div className="col-md-6" id="country-parent">
-              <label htmlFor="country" className="form-label h4 my-3 text-dark" data-test-id="countryLabelTest">
+              <label htmlFor="country" className="form-label h4 my-3 text-dark" data-test-id="country-Label-Test" id="country-label-id">
                 Country
               </label>
               <Field
