@@ -106,7 +106,7 @@ const UserForm = () => {
   return (
     <div className="contanier my-3 mx-5 bg-light">
       <h1>
-        <b className="display-4 text-center" id="headerName" data-cy="headerTest">Register Form App</b>
+        <b className="display-4 text-center" id="headerName" data-test-id="header-Test">Register Form App</b>
       </h1>
 
       <Formik
@@ -120,7 +120,7 @@ const UserForm = () => {
               <label
                 htmlFor="firstname"
                 className="form-label h4 my-3 text-dark"
-                data-cy="firstNameLabelTest"
+                data-test-id="first-Name-Label-Test"
               >
                 First Name
               </label>
@@ -129,7 +129,7 @@ const UserForm = () => {
                 id="firstname"
                 placeholder="Enter your First Name"
                 type="text"
-                data-cy="firstNameTest"
+                data-test-id="first-Name-Test"
                 className="form-control"
               />
               <ErrMsg name="firstName" className="form-text" />
@@ -138,7 +138,7 @@ const UserForm = () => {
               <label
                 htmlFor="lastname"
                 className="form-label h4 my-3 text-dark "
-                data-cy="lastNameLabelTest"
+                data-test-id="last-Name-Label-Test"
               >
                 Last Name
               </label>
@@ -147,7 +147,7 @@ const UserForm = () => {
                 id="lastname"
                 placeholder="Enter your Last Name"
                 type="text"
-                data-cy="lastNameTest"
+                data-test-id="last-Name-Test"
                 className="form-control"
               />
               <ErrMsg name="lastName" className="fs-4" />
@@ -155,11 +155,11 @@ const UserForm = () => {
           </div>
           <div class="row border border-3 mx-5 my-2 bg-light">
             <div className="col-md-6" id="gender-parent">
-              <label htmlFor="gender" className="form-label h4 my-3 text-dark" data-cy="genderLabelTest">
+              <label htmlFor="gender" className="form-label h4 my-3 text-dark" data-test-id="gender-Label-Test">
                 Gender
               </label>
               <div className="row form-control mx-1">
-                <span className="col-md-3 form-check form-check-inline" data-cy="gender_radio_parent">
+                <span className="col-md-3 form-check form-check-inline" data-test-id="gender_radio_parent">
                   <label htmlFor="gender" className="form-check-label" id="Male">
                     Male
                   </label>
@@ -170,10 +170,10 @@ const UserForm = () => {
                     type="radio"
                     value="male"
                     className="form-check-input"
-                    data-cy="maleGender"
+                    data-test-id="maleGender"
                   />
                 </span>
-                <span className="col-md-4 form-check form-check-inline" data-cy="gender_radio_parent">
+                <span className="col-md-4 form-check form-check-inline" data-test-id="gender_radio_parent">
                   <label htmlFor="gender" className="form-check-label " id="Female">
                     Female
                   </label>
@@ -184,10 +184,10 @@ const UserForm = () => {
                     type="radio"
                     value="female"
                     className="form-check-input"
-                    data-cy="femaleGender"
+                    data-test-id="femaleGender"
                   />
                 </span>
-                <span className="col-md-3  form-check form-check-inline" data-cy="gender_radio_parent">
+                <span className="col-md-3  form-check form-check-inline" data-test-id="gender_radio_parent">
                   <label htmlFor="gender" className="form-check-label " id="Other">
                     Other
                   </label>
@@ -198,14 +198,14 @@ const UserForm = () => {
                     type="radio"
                     value="other"
                     className="form-check-input"
-                    data-cy="otherGender"
+                    data-test-id="otherGender"
                   />
                 </span>
               </div>
               <ErrMsg name="gender" />
             </div>
             <div className="col-md-6" id="country-parent">
-              <label htmlFor="country" className="form-label h4 my-3 text-dark" data-cy="countryLabelTest">
+              <label htmlFor="country" className="form-label h4 my-3 text-dark" data-test-id="countryLabelTest">
                 Country
               </label>
               <Field
@@ -213,7 +213,7 @@ const UserForm = () => {
                 id="country"
                 placeholder="Select Your Country"
                 type="select"
-                data-cy="countryTest"
+                data-test-id="countryTest"
                 className="form-control"
                 as="select"
               >
@@ -246,7 +246,7 @@ const UserForm = () => {
               <label
                 htmlFor="mobilenumber"
                 className="form-label h4 my-3 text-dark"
-                data-cy="mobileNumberLabelTest"
+                data-test-id="mobileNumberLabelTest"
               >
                 Mobile Number
               </label>
@@ -255,13 +255,13 @@ const UserForm = () => {
                 id="mobileNumber"
                 placeholder="Enter your Mobile Number"
                 type="text"
-                data-cy="mobileNumberTest"
+                data-test-id="mobileNumberTest"
                 className="form-control"
               />
               <ErrMsg name="mobileNumber" className="form-text" />
             </div>
             <div className="col-md-6 bg-light" id="email-parent">
-              <label htmlFor="email" className="form-label h4 my-3 text-dark" data-cy="emailLabelTest">
+              <label htmlFor="email" className="form-label h4 my-3 text-dark" data-test-id="emailLabelTest">
                 Email
               </label>
               <Field
@@ -269,7 +269,7 @@ const UserForm = () => {
                 id="email"
                 placeholder="Enter your Email"
                 type="email"
-                data-cy="emailTest"
+                data-test-id="emailTest"
                 className="form-control"
               />
               <ErrMsg name="email" className="form-text" />
@@ -280,7 +280,7 @@ const UserForm = () => {
               <label
                 htmlFor="password"
                 className="form-label h4 my-3 text-dark"
-                data-cy="passwordLabelTest"
+                data-test-id="passwordLabelTest"
               >
                 Password
               </label>
@@ -289,7 +289,7 @@ const UserForm = () => {
                 id="password"
                 placeholder="Enter your Password"
                 type="password"
-                data-cy="passwordTest"
+                data-test-id="passwordTest"
                 className="form-control"
               />
               <ErrMsg name="password" className="form-text" />
@@ -298,7 +298,7 @@ const UserForm = () => {
               <label
                 htmlFor="confirmpassword"
                 className="form-label h4 my-3 text-dark"
-                data-cy="confirmPasswordLabelTest"
+                data-test-id="confirmPasswordLabelTest"
               >
                 Confirm Password
               </label>
@@ -307,7 +307,7 @@ const UserForm = () => {
                 id="confirmPassword"
                 placeholder="Enter your Confirm Password"
                 type="password"
-                data-cy="confirmPasswordTest"
+                data-test-id="confirmPasswordTest"
                 className="form-control"
               />
               <ErrMsg name="confirmPassword" className="form-text" />
@@ -315,7 +315,7 @@ const UserForm = () => {
           </div>
 
           <div className="d-grid gap-2 m-3" id="register-btn-parent">
-            <button type="submit" id="formregisterbutton" className="btn btn-success text-white fs-5" data-cy="registerButton">
+            <button type="submit" id="formregisterbutton" className="btn btn-success text-white fs-5" data-test-id="registerButton">
               Register
             </button>
           </div>

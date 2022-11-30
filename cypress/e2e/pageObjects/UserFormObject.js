@@ -1,26 +1,26 @@
 export class UserFormPage {
   //locators
-  form_heading = "[data-cy=headerTest]";
-  form_first_name_label = "[data-cy=firstNameLabelTest]";
-  form_first_name_value = "[data-cy=firstNameTest]";
-  form_last_name_label = "[data-cy=lastNameLabelTest]";
-  form_last_name_value = "[data-cy=lastNameTest]";
-  form_gender_parent = "[data-cy=gender_radio_parent]";
-  form_gender_label = "[data-cy=genderLabelTest]";
-  form_gender_male_value = "[data-cy=maleGender]";
-  form_gender_female_value = "[data-cy=femaleGender]";
-  form_gender_other_value = "[data-cy=otherGender]";
-  form_country_label = "[data-cy=countryLabelTest]";
-  form_country_value = "[data-cy=countryTest]";
-  form_mobile_number_label = "[data-cy=mobileNumberLabelTest]";
-  form_mobile_number_value = "[data-cy=mobileNumberTest]";
-  form_email_label = "[data-cy=emailLabelTest]";
-  form_email_value = "[data-cy=emailTest]";
-  form_password_label = "[data-cy=passwordLabelTest]";
-  form_password_value = "[data-cy=passwordTest]";
-  form_confirm_password_label = "[data-cy=confirmPasswordLabelTest]";
-  form_confirm_password_value = "[data-cy=confirmPasswordTest]";
-  form_register_btn = "[data-cy=registerButton]";
+  form_heading = "[data-test-id=headerTest]";
+  form_first_name_label = "[data-test-id=first-Name-Label-Test]";
+  form_first_name_value = "[data-test-id=first-Name-Test]";
+  form_last_name_label = "[data-test-id=last-Name-Label-Test]";
+  form_last_name_value = "[data-test-id=last-Name-Test]";
+  form_gender_parent = "[data-test-id=gender_radio_parent]";
+  form_gender_label = "[data-test-id=genderLabelTest]";
+  form_gender_male_value = "[data-test-id=maleGender]";
+  form_gender_female_value = "[data-test-id=femaleGender]";
+  form_gender_other_value = "[data-test-id=otherGender]";
+  form_country_label = "[data-test-id=countryLabelTest]";
+  form_country_value = "[data-test-id=countryTest]";
+  form_mobile_number_label = "[data-test-id=mobileNumberLabelTest]";
+  form_mobile_number_value = "[data-test-id=mobileNumberTest]";
+  form_email_label = "[data-test-id=emailLabelTest]";
+  form_email_value = "[data-test-id=emailTest]";
+  form_password_label = "[data-test-id=passwordLabelTest]";
+  form_password_value = "[data-test-id=passwordTest]";
+  form_confirm_password_label = "[data-test-id=confirmPasswordLabelTest]";
+  form_confirm_password_value = "[data-test-id=confirmPasswordTest]";
+  form_register_btn = "[data-test-id=registerButton]";
 
   click_on_Register_Btn() {
     cy.get(this.form_register_btn)
